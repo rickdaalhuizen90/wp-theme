@@ -1,0 +1,30 @@
+{
+    "name": "yilman-solutions/wordpress-starter",
+    "type": "wordpress-theme",
+    "description": "Wordpress Starter Theme",
+    "keywords": [
+        "WordPress",
+        "Themes"
+    ],
+    "homepage": "https://github.com/yilman-solutions/wordpress-starter#readme",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4",
+        "roave/security-advisories": "dev-master"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "wptrt/wpthemereview": "^0.2.1",
+        "php-parallel-lint/php-parallel-lint": "^1.2.0",
+        "wp-cli/i18n-command": "^2.2.5"
+    },
+    "scripts": {
+        "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+        "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
+        "make-pot": "wp i18n make-pot . languages/digiq-starter.pot"
+    },
+    "support": {
+        "issues": "https://github.com/digiq/wordpress-starter/issues",
+        "source": "https://github.com/digiq/wordpress-starter"
+    }
+}

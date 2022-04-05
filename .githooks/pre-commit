@@ -1,0 +1,4 @@
+#!/bin/bash
+
+npm run lint:css
+npm run lint:js

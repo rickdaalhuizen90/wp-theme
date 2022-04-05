@@ -1,0 +1,17 @@
+/**
+The application.scss file should only hold imports.
+No actual rules, styling, variables, mixins, etc. can go in it.
+*/
+
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "base/reset";
+@import "base/normalize";
+@import "base/typography";
+@import "config";
+@import "core";
+@import "shame";
+@import "pages/about-us";
+@import "pages/home";
+@import "components/header";
+@import "components/nav-list";

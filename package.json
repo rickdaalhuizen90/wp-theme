@@ -1,0 +1,28 @@
+{
+  "name": "wp-starter",
+  "version": "1.0.0",
+  "description": "Wordpress Starter Theme",
+  "author": "Rick Daalhuizen",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "devDependencies": {
+    "@wordpress/scripts": "^22.3.0",
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "markdownlint": "^0.25.1",
+    "rtlcss": "^3.5.0"
+  },
+  "scripts": {
+    "css:watch": "sass --watch css/style.scss public/css/style.min.css",
+    "lint:css": "wp-scripts lint-style 'css/**/*.scss'",
+    "lint:js": "wp-scripts lint-js 'js/*.js'",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "check-engines": "wp-scripts check-engines",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "format": "wp-scripts format"
+  }
+}
